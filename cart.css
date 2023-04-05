@@ -1,0 +1,8 @@
+@media only screen and (max-width: 993px) {
+    .top-header{
+        display: none;
+    }
+}
+body{
+    background-color: #edeef0;
+}

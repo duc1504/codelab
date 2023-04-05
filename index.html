@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bài 1</title>
+</head>
+
+<body>
+    <div style="height: 28px; background-color: #69b57e; color: aliceblue;" class="container-fluid top-header">
+        <div class="row top-header">
+            <div class="col-md-12 col-lg-4 d-flex text-center">
+                <p class="me-2">HELP</p>
+                <i class="fa-sharp fa-solid fa-phone-volume mt-1 me-2"></i>
+                <p>+1-543-324-54643</p>
+            </div>
+            
+            <div class="col-md-12 col-lg-8 d-flex justify-content-end text-center">
+                <p class="me-2">MY ACCOUNT</p>
+                <p class="me-2">SIGN IN</p>
+                <p class="me-2">CREATE ACCOUNT</p>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success ">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="text-light">THSHOP</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            NEW PRODUCTS
+                        </a>
+                        <ul class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item " href="#">T-SHIRT</a></li>
+                            <li><a class="dropdown-item " href="#">VARSITY</a></li>
+
+                            <li><a class="dropdown-item " href="#">BOMBER</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SHOP
+                        </a>
+                        <ul class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item " href="#">Action</a></li>
+                            <li><a class="dropdown-item " href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item " href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item " href="#">FACEBOOK</a></li>
+                            <li><a class="dropdown-item " href="#">INSTAGRAM</a></li>
+                            <li><a class="dropdown-item " href="#">TWITTER</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">ALL PAGE LINK</a>
+                    </li>
+                </ul>
+                <div class="cart text-light me-5">
+                  <a class="text-white" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>CART(210.00$)<i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+                <div class="search text-light me-5"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+    </nav>
+    <!-- banner -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/banners_for_websites_cover.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/information-technology-web-header-banner-wrench-computer-repairman-icons-etc-138468550.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/information-technology-web-header-banner-wrench-computer-repairman-icons-etc-146457341.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- new arrivals -->
+    <div class="container text-center mt-5">
+        <h1 class="opacity-50">NEW ARRIVALS</h1>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card mt-3 ">
+                    <div class="img">
+                        <img src="image/aa.webp" alt="" style="width:100%;">
+                        <p class="badge bg-secondary bg-danger">NEW</p>
+                        <p class="badge bg-secondary bg-success onlynew">15%
+                            OFF</p>
+                    </div>
+                    <h4>Ngọc Đức</h4><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                    XL/XXL/S <br>
+                    <h5>$25</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success mb-3" type="button">
+                            <i class="fas fa-shopping-cart"></i>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card mt-3">
+                    <div class="img">
+                        <img src="image/a2.webp" alt="" style="width:100%;">
+                        <p class="badge bg-secondary bg-success only15 ">15%
+                            OFF</p>
+                    </div>
+                    <h4>Trịnh Ngọc Đức</h4><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                    XL/XXL/S <br>
+                    <h5>$25</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success mb-3" type="button">
+                            <i class="fas fa-shopping-cart"></i>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card mt-3">
+                    <div class="img">
+                        <img src="image/hihi.webp" alt="" style="width:100%;">
+                        <p class="badge bg-secondary bg-danger">NEW</p>
+                    </div>
+                    <h4>Trịnh Đức</h4><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                    XL/XXL/S <br>
+                    <h5>$25</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success mb-3" type="button">
+                            <i class="fas fa-shopping-cart"></i>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card mt-3">
+                    <div class="img">
+                        <img src="image/a4.jpg" alt="" width="100%">
+                    </div>
+                    <h4>T.N Đức</h4><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                    XL/XXL/S <br>
+                    <h5>$25</h5>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success mb-3" type="button">
+                            <i class="fas fa-shopping-cart"></i>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ảnh cuối trang -->
+    <div class="pt-5">
+        <img style="max-height: 300px; width: 100%;" src="image/anh.jpg" alt="">
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+     
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>SUPPORT
+                            <hr>
+                        </h6>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <i class="fa-solid fa-phone"></i>+1-345-563-3453 <br>
+                        <i class="fa-regular fa-envelope"></i>ngocduc@gmail.com
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="fw-bold mb-4">
+                           SHOP
+                           <hr>
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">men's</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Women's</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Kids's</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Shoes</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Gift Card</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class=" fw-bold mb-4">
+                            INFORMATION 
+                            <hr>
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Questions?</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Oder Status</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Sizing Charts</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Return Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contact Us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                   
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class=" fw-bold mb-4">
+                            MY ACCOUNT
+                            <hr>
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">My Accout</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">My Address</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Wish List</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Oder List</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Oder Status</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class=" fw-bold mb-4">
+                           STAY IN TOUCH
+                            <hr>
+                        </h6>
+                        <form class="d-flex flex-column">
+                            <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
+                            <button class="btn bg-success text-light mt-2" type="submit">SUBSCRIBE <i class="fa-solid fa-right-long"></i></button>
+                          </form>
+                          <div class="d-flex mt-4">
+                            <i class="fa-brands fa-2xl fa-facebook me-2"></i>
+                            <i class="fa-brands fa-2xl fa-twitter me-2"></i>
+                            <i class="fa-brands fa-2xl fa-google-plus me-2"></i>
+                            <i class="fa-brands fa-2xl fa-pinterest me-2"></i>
+                            <i class="fa-brands fa-2xl fa-youtube me-2"></i>
+                            
+                          </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom border-light footer">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span><b> ©THSHOP 2014. ALL right reserved.</b></span>
+            </div>
+           
+            <div class="d-flex">
+             <img style="width: 50px; height: 50px " src="image/mass.png" alt="">
+             <img style="width: 50px; height: 50px" src="image/pay.webp" alt="">
+             <img style="width: 50px; height: 50px" src="image/viss.png" alt="">
+             <img style="width: 50px; height: 50px" src="image/MoMo_Logo.png" alt="">
+            </div>
+           
+          </section>
+    </footer>
+    <!-- Footer -->
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

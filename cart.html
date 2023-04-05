@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Bài 2</title>
+</head>
+
+<body>
+    <div style="background-color: #69b57e; color: aliceblue;" class="container-fluid top-header">
+        <div class="row top-header">
+            <div class="col-md-12 col-lg-4 d-flex text-center">
+                <p class="mt-2 me-2">HELP</p>
+                <i class="fa-sharp fa-solid fa-phone-volume mt-3 me-2"></i>
+                <p class="mt-2">+1-543-324-54643</p>
+            </div>
+            
+            <div class="col-md-12 col-lg-8 d-flex justify-content-end text-center">
+                <p class="mt-2 me-2">MY ACCOUNT</p>
+                <p class="mt-2 me-2">SIGN IN</p>
+                <p class="mt-2 me-2">CREATE ACCOUNT</p>
+            </div>
+        </div>
+    </div>
+
+<!-- header -->
+<nav class="navbar navbar-expand-lg navbar-light bg-success ">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+            <h1 class="text-light">THSHOP</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        NEW PRODUCTS
+                    </a>
+                    <ul class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item " href="#">T-SHIRT</a></li>
+                        <li><a class="dropdown-item " href="#">VARSITY</a></li>
+
+                        <li><a class="dropdown-item " href="#">BOMBER</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        SHOP
+                    </a>
+                    <ul class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item " href="#">Action</a></li>
+                        <li><a class="dropdown-item " href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item " href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        PAGES
+                    </a>
+                    <ul class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item " href="#">FACEBOOK</a></li>
+                        <li><a class="dropdown-item " href="#">INSTAGRAM</a></li>
+                        <li><a class="dropdown-item " href="#">TWITTER</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">ALL PAGE LINK</a>
+                </li>
+            </ul>
+            <div class="cart text-light me-5">
+                <i class="fa-solid fa-cart-shopping"></i>CART(210.00$)<i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="search text-light me-5"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5 border bg-white border-light">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-2">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Category</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Cart</li>
+        </ol>
+      </nav>
+</div>
+
+<div class="container d-flex justify-content-between">
+   <div class="d-flex">
+    <i class="fa-solid fa-2xl fa-cart-shopping me-2 mt-5"></i>
+    <h3 class="mt-4">Shopping cart</h3>
+   </div>
+   <div class="d-flex">
+    <i class="fa-solid fa-chevron-left me-2 mt-5"></i>
+    <P class="mt-5">BACK TO SHOPPING</P>
+   </div>
+</div>
+
+<section class="h-100 h-custom">
+    <div class="container pb-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-8">
+                  <div class="p-4">
+                    <div class="d-flex justify-content-around align-items-center">
+                      <div class="left d-flex">
+                        <h6 class="fw-bold mb-0 text-black me-5">PRODUCT</h6>
+                      <h6 class="fw-bold mb-0 text-black mx-3">DETAIL</h6>
+                      </div>
+                      <div class="right"></div>
+                      <h6 class="fw-bold mb-0 text-black">QNT</h6>
+                      <h6 class="fw-bold mb-0 text-black ">DISCOUNT</h6>
+                      <h6 class="fw-bold mb-0 text-black ">TOTAL</h6>
+                    </div>
+                    <hr class="my-4">
+  
+                    <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-2 col-lg-2 col-xl-2">
+                        <img
+                          src="image/a4.jpg"
+                          class="img-fluid rounded-3" alt="Cotton T-shirt">
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-3">
+                        <h6 class="text-muted">Denim T Shirt Back</h6>
+                        <h6 class="text-black mb-0">12x 1.5L</h6>
+                        <b>$8.80</b>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1">
+                        <a href="#!" class="text-muted"><i class="fa-solid fa-trash-can"></i></a>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <button class="btn btn-link px-2"
+                        
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+  
+                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                          class="form-control form-control-sm" />
+  
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1">
+                      <p class="mx-5 mt-3">0</p>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                        <h6 class="mb-0 me-2"><b>$60</b></h6>
+                      </div>
+                    
+                    </div>
+  
+                    <hr class="my-4">
+  
+                    <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-2 col-lg-2 col-xl-2">
+                        <img
+                          src="image/aa.webp"
+                          class="img-fluid rounded-3" alt="Cotton T-shirt">
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-3">
+                        <h6 class="text-muted">Denim T Shirt Red</h6>
+                        <h6 class="text-black mb-0">12x 1.5L</h6>
+                        <b>$30</b>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1 ">
+                        <a href="#!" class="text-muted"><i class="fa-solid fa-trash-can"></i></a>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+  
+                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                          class="form-control form-control-sm" />
+  
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1">
+                        <p class="mx-5 mt-3">0</p>
+                        </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                        <h6 class="mb-0"><b>$300</b></h6>
+                      </div>
+                      
+                    </div>
+  
+                    <hr class="my-4">
+  
+                    <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-2 col-lg-2 col-xl-2">
+                        <img
+                          src="image/hi.jpg"
+                          class="img-fluid rounded-3" alt="Cotton T-shirt">
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-3">
+                        <h6 class="text-muted">Denim T shirt Blue</h6>
+                        <h6 class="text-black mb-0">12x 1.5L</h6>
+                        <b>$8.80</b>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1 ">
+                        <a href="#!" class="text-muted"><i class="fa-solid fa-trash-can"></i></a>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+  
+                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                          class="form-control form-control-sm" />
+  
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1">
+                        <p class="mx-5 mt-3">0</p>
+                        </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                        <h6 class="mb-0"><b>$60</b></h6>
+                      </div>
+                      
+                    </div>
+                    <hr class="my-4">
+                    <div class="d-flex justify-content-between">
+                        <button class="btn bg-secondary px-3 text-white " type="submit"><i class="fa-solid fa-chevron-left"></i>Continue shopping</button>
+                    <button class="btn bg-secondary px-5 text-white " type="submit"><i class="fa-solid fa-spinner"></i>Update</button>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-4 bg-grey">
+                  <div class="p-5">
+                    <form class="d-flex flex-column">
+                        <button class="btn bg-success text-light py-2" type="submit">Proceed to checkout <i class="fa-solid fa-right-long"></i></button>
+                      </form>
+                      <div class="card">
+                            <div class="d-flex justify-content-between mx-3">
+                                <p>Total products</p>
+                                <b>$216</b>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mx-3">
+                                <p>Shipping</p>
+                                <p class="text-success">Free shipping</p>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mx-3">
+                                <p>Total (tax excl.)</p>
+                                <b>$216.51</b>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mx-3">
+                                <p>Total tax</p>
+                                <b>0.00$</b>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mx-3">
+                                <p>Total</p>
+                                <h4 class="text-success"><b>216.51$</b></h4>
+                            </div>
+                            <form class="d-flex mt-3 mb-5 mx-3">
+                                <input class="form-control me-2" type="search" placeholder="Coupon code" aria-label="Search">
+                                <button class="btn bg-success text-light " type="submit">Apply!</button>
+                              </form>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+  <footer class="text-center text-lg-start bg-light text-muted pt-3"> 
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>SUPPORT
+                        <hr>
+                    </h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <i class="fa-solid fa-phone"></i>+1-345-563-3453 <br>
+                    <i class="fa-regular fa-envelope"></i>ngocduc@gmail.com
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="fw-bold mb-4">
+                       SHOP
+                       <hr>
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">men's</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Women's</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Kids's</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Shoes</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Gift Card</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class=" fw-bold mb-4">
+                        INFORMATION 
+                        <hr>
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Questions?</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Oder Status</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Sizing Charts</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Return Policy</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Contact Us</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+               
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class=" fw-bold mb-4">
+                        MY ACCOUNT
+                        <hr>
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">My Accout</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">My Address</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Wish List</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Oder List</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Oder Status</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class=" fw-bold mb-4">
+                       STAY IN TOUCH
+                        <hr>
+                    </h6>
+                    <form class="d-flex flex-column">
+                        <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
+                        <button class="btn bg-success text-light mt-2" type="submit">SUBSCRIBE <i class="fa-solid fa-right-long"></i></button>
+                      </form>
+                      <div class="d-flex mt-4">
+                        <i class="fa-brands fa-2xl fa-facebook me-2"></i>
+                        <i class="fa-brands fa-2xl fa-twitter me-2"></i>
+                        <i class="fa-brands fa-2xl fa-google-plus me-2"></i>
+                        <i class="fa-brands fa-2xl fa-pinterest me-2"></i>
+                        <i class="fa-brands fa-2xl fa-youtube me-2"></i>
+                        
+                      </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom border-light footer">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span><b> ©THSHOP 2014. ALL right reserved.</b></span>
+        </div>
+       
+        <div class="d-flex">
+         <img style="width: 50px; height: 50px " src="image/mass.png" alt="">
+         <img style="width: 50px; height: 50px" src="image/pay.webp" alt="">
+         <img style="width: 50px; height: 50px" src="image/viss.png" alt="">
+         <img style="width: 50px; height: 50px" src="image/MoMo_Logo.png" alt="">
+        </div>
+      </section>
+</footer>
+<script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
